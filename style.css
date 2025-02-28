@@ -32,14 +32,26 @@ nav,
 .nav-links {
   display: flex;
 }
+nav {
+  position: sticky;
+  top: 0;
+  /* width: 100%; */
+  
+ 
+  /* padding: 15px 20px; */
+  z-index: 1000;
+}
+
 
 nav {
+  position: sticky;
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-}
+} 
 
 .nav-links {
+   position: sticky; 
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
@@ -94,7 +106,8 @@ a:hover {
 }
 
 .menu-links {
-  position: absolute;
+  position: sticky;
+  /* position: absolute; */
   top: 100%;
   right: 0;
   background-color: white;
